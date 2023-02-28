@@ -23,7 +23,7 @@ using System;
     }
 }*/
 
-public class Transaction
+/*public class Transaction
 {
     public decimal Balance
     {
@@ -215,7 +215,7 @@ class PAI
         string neur8 = "F";
         string neur9 = "H";
 
-        List<string> NeuronDatabase = new List<string>();
+        List<string> NeuronDatabase = new List<string>(6);
         //The following code snippet adds items to the list.
 
         NeuronDatabase.Add("Long");
@@ -227,6 +227,9 @@ class PAI
 
         //Alternatively, we can also pass an array of objects to create a List object.The following code snippet creates a List object from an array of strings.
 
+        
+
+
         for(int i = 0; i < NeuronDatabase.Count; i++)
         {
             Console.WriteLine(NeuronDatabase[i]);
@@ -237,51 +240,110 @@ class PAI
 /*string[] authors = { "Mike Gold", "Don Box",
                         "Sundar Lal", "Neel Beniwal" };
         List<string> authorsRange = new List<string>(authors);*/
-        //The following code snippet creates a list of integer type.
+//The following code snippet creates a list of integer type.
 
 //List<int> AgeList = new List<int>();
-        //The following code snippet adds items to the dictionary.
+//The following code snippet adds items to the dictionary.
 
-        /*AgeList.Add(35);
-        AgeList.Add(25);
-        AgeList.Add(29);
-        AgeList.Add(21);
-        AgeList.Add(84);*/
-        //We can also limit the size of a list.The following code snippet creates a list where the key type is float and the total number of items it can hold is 3.
+/*AgeList.Add(35);
+AgeList.Add(25);
+AgeList.Add(29);
+AgeList.Add(21);
+AgeList.Add(84);*/
+//We can also limit the size of a list.The following code snippet creates a list where the key type is float and the total number of items it can hold is 3.
 
-        //List<float> PriceList = new List<float>(3);
-        //The following code snippet adds items to the list.
+//List<float> PriceList = new List<float>(3);
+//The following code snippet adds items to the list.
 
-        /*PriceList.Add(3.25f);
-        PriceList.Add(2.76f);
-        PriceList.Add(1.15f);*/
+/*PriceList.Add(3.25f);
+PriceList.Add(2.76f);
+PriceList.Add(1.15f);*/
 
-        var account = new BankAccount("<Bernello Gabon>", 123456789);
-        Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} initial balance.");
+/*var account = new BankAccount("<Bernello Gabon>", 123456789);
+Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} initial balance.");
 
-        for (int i = 0; i < 9; i++) 
-        {
-            /*Console.WriteLine(PAITools.Lab());
-            Console.WriteLine(PAITools.Lab2());
-            Console.WriteLine(PAITools.Lab3());*/
+for (int i = 0; i < 9; i++) 
+{
+    /*Console.WriteLine(PAITools.Lab());
+    Console.WriteLine(PAITools.Lab2());
+    Console.WriteLine(PAITools.Lab3());*/
 
-            Console.WriteLine(neur);
-        }
-
-        int counter = 0;
-        while (counter < 10)
-        {
-            Console.WriteLine($"Hello World! The counter is {counter}");
-            Console.WriteLine(char.MinValue);
-            Console.Write(nameof(counter));
-            counter = 0;
-            while (counter < 10) ;
-          
-            counter++;
-        }
-    }
+/*Console.WriteLine(neur);
 }
 
+int counter = 0;
+while (counter < 10)
+{
+Console.WriteLine($"Hello World! The counter is {counter}");
+Console.WriteLine(char.MinValue);
+Console.Write(nameof(counter));
+counter = 0;
+while (counter < 10) ;
+
+counter++;
+}
+}
+}*/
 
 
+Console.WriteLine("Hello World");
+string neuron = "Long";
+Console.WriteLine(neuron);
+Console.WriteLine("Hello " + neuron);
+string neuron2 = "Happy";
+string neuron3 = "Depressed";
+Console.WriteLine($"My neurons are {neuron} and {neuron2} and {neuron3}");
+Console.WriteLine("We have to change the dynamic!");
+Console.WriteLine("Keep adding data!");
+string neuron4 = "Character";
+string neuron5 = "Energy";
+string neuron6 = "Creativity";
+string neuron7 = "Healthy";
+string neuron8 = "Intuition";
+string neuron9 = "labour";
+string neuron10 = "Luck";
+string neuron11 = "Duty";
+string neuron12 = "Memory";
+Console.WriteLine($"My neurons are {neuron} and {neuron2} and {neuron3} and { neuron4} and {neuron5} and {neuron6} and {neuron7} and {neuron8} and {neuron9} and {neuron10} and {neuron11} and {neuron12}");
+Console.WriteLine("Really?");
+Console.WriteLine("I'm not sure");
+Console.WriteLine("Well google it or better yet use ChatGPT");
+Console.WriteLine("So what are the properties of a neuron?");
+string neuronproperty = "Excitability";
+string neuronproperty2 = "Conductivity";
+string neuronproperty3 = "Synaptic transmission";
+string neuronproperty4 = "Plasticity";
+string neuronproperty5 = "Integration";
+Console.WriteLine($"The properties of a neuron are {neuronproperty} and {neuronproperty2} and {neuronproperty3} and {neuronproperty4} and {neuronproperty5}");
 
+string neuronfunction = "Sensory processing";
+string neuronfunction2 = "Motor Control";
+string neuronfunction3 = "Integration of information";
+string neuronfunction4 = "Learning and memoory";
+string neuronfunction5 = "Regulation of bodily functions";
+string neuronfunction6 = "Communication between neurons";
+Console.WriteLine($"The functions of A NEURON ARE {neuronfunction} and {neuronfunction2} and {neuronfunction3} and {neuronfunction4} and {neuronfunction5} and {neuronfunction6}");
+Console.WriteLine("Now we are going to go through some neuron numbers");
+long neuronNumber = 100000000000;
+long neuronNumber2 = 86000000000;
+long glialCells = neuronNumber * 10;
+long humanBrainMassGrams = 1508;
+long powerLaw = neuronNumber * humanBrainMassGrams;
+long massCerebralCortexGrams = 1233;
+long neuronsCerebralCortex = 16000000000;
+long neuronsCerebellum = 140000000000;
+long neuronalDensityPMg = 600000;
+/*for (long i = 0; i < 1000000000; i++)
+{
+    Console.Write('A');
+}*/
+//success
+char[] alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
+for (long j = 0; j < 200; j++)
+{
+    for (long i = 0; i < 26; i++)
+    {
+        Console.Write(alpha[i]);
+    }
+}
+//success
