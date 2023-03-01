@@ -339,11 +339,35 @@ long neuronalDensityPMg = 600000;
 }*/
 //success
 char[] alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
-for (long j = 0; j < 200; j++)
+/*for (long j = 0; j < 200; j++)
 {
     for (long i = 0; i < 26; i++)
     {
         Console.Write(alpha[i]);
     }
-}
+}*/
 //success
+for (long a = 0; a < 200; a++)
+{
+    Console.Write(" ");
+    Console.Write("X");
+}
+/*Deoxyribonucleic acid (DNA) is the chemical compound 
+ * that contains the instructions needed to develop 
+ * and direct the activities of nearly all living organisms
+ * . DNA molecules are made of two twisting, paired 
+ * strands, often referred to as a double helix
+ */
+
+/*Each DNA strand is made of four chemical units, called 
+nucleotide bases, which comprise the genetic "alphabet." 
+The bases are adenine (A), thymine (T), 
+guanine (G), and cytosine (C). Bases on opposite strands 
+pair specifically: an A always pairs with a T; a C always 
+pairs with a G. The order of the As, 
+Ts, Cs and Gs determines the meaning of the information 
+encoded in that part of the DNA molecule just as the 
+order of letters determines the meaning of 
+a word.*/
+
+char[] nucBases = "ATGC".ToCharArray();
