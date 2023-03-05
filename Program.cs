@@ -2,6 +2,30 @@
 // A skeleton of a C# program
 using System;
 
+abstract class Genome
+{
+    public void StartGenome() { char[] neurons = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray(); }
+
+    protected char[] ChangeGenome(char[] neurons)
+    {
+        char[] neuronShift = "BCDEFGHIJKLMNOPQRSTUVWXYZA".ToCharArray();
+        return neuronShift;
+    }
+
+}
+
+class MainMethod
+{
+
+    // Main Method
+    static public void Main(String[] args)
+    {
+        char[] alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
+        Console.WriteLine("Main Method");
+        
+    }
+}
+
 
 
 /*class PAITools
@@ -286,7 +310,7 @@ counter++;
 }*/
 
 
-Console.WriteLine("Hello World");
+/*Console.WriteLine("Hello World");
 string neuron = "Long";
 Console.WriteLine(neuron);
 Console.WriteLine("Hello " + neuron);
@@ -338,7 +362,7 @@ long neuronalDensityPMg = 600000;
     Console.Write('A');
 }*/
 //success
-char[] alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
+//
 /*for (long j = 0; j < 200; j++)
 {
     for (long i = 0; i < 26; i++)
@@ -347,7 +371,7 @@ char[] alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
     }
 }*/
 //success
-for (long a = 0; a < 200; a++)
+/*for (long a = 0; a < 200; a++)
 {
     Console.Write(" ");
     Console.Write("X");
@@ -370,4 +394,23 @@ encoded in that part of the DNA molecule just as the
 order of letters determines the meaning of 
 a word.*/
 
-char[] nucBases = "ATGC".ToCharArray();
+//char[] nucBases = "ATGC".ToCharArray();
+//Perception of world class
+//Philosophy of mind body and function
+//Positive reaffirmations
+//Optimistic stories
+//Pessimistic Optimistic AI 
+/*Console.WriteLine("I have the perception of world class");
+Console.WriteLine("I have the philosophy of mind body and function");
+for (int j = 0; j < 4; j++)
+{
+    for (int k = 0; k < 4; k++)
+    {
+        Console.Write(nucBases[k]);
+    }
+}
+//success
+
+
+string result = Genome.ChangeGenome(nucBases);
+Console.WriteLine(result);*/
