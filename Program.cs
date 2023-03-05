@@ -2,16 +2,17 @@
 // A skeleton of a C# program
 using System;
 
-abstract class Genome
+abstract class Brain
 {
-    public void StartGenome() { char[] neurons = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray(); }
+    public void StartNeurons() { char[] neurons = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray(); }
 
-    protected char[] ChangeGenome(char[] neurons)
+    protected char[] AddNeurons(char[] neurons)
     {
-        char[] neuronShift = "BCDEFGHIJKLMNOPQRSTUVWXYZA".ToCharArray();
-        return neuronShift;
+        return neurons;
     }
+    public virtual string Drive(char[] chars, int index) { return "neurons"; }
 
+    public abstract int neuronIndicator();
 }
 
 class MainMethod
