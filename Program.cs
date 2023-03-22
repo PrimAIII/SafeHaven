@@ -2,30 +2,40 @@
 // A skeleton of a C# program
 using System;
 
+public class DecisionMatrix
+{
+    //Constructor that takes no arguments
+    public DecisionMatrix()
+    {
+        Decision = true;
+    }
 
+    //Constructor that takes 1 argument
+    public DecisionMatrix(bool X)
+    {
+        Decision = X;
+    }
 
-public class Brain
+    //Auto implemented read only property
+    public bool Decision { get; set; }
+}
+
+public class Coffee
 {
     // Constructor that takes no arguments:
-    public Brain()
+    public Coffee()
     {
-        Name = "Jim";
+        string Name = "Latte";
     }
 
     // Constructor that takes one argument:
-    public Brain(string name)
+    public Coffee(string Milk)
     {
-        Name = name;
+        Milk = "Oat";
     }
 
     // Auto-implemented readonly property:
-    public string Name { get; }
-
-    // Method that overrides the base class (System.Object) implementation.
-    public override string ToString()
-    {
-        return Name;
-    }
+    public string Beans { get; set; }
 }
 
 
@@ -38,15 +48,33 @@ class MainMethod
     {
         char[] alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
         Console.WriteLine("Main Method");
-        Console.WriteLine(alpha);
+        Console.WriteLine("This is a char array: " + alpha);
 
-        var brain1 = new Brain();
+        var coffee = new Coffee();
 
-        Console.WriteLine(brain1.Name);
+        Console.WriteLine(coffee.Beans);
 
-        var brain2 = new Brain("Flim Wazza");
+        var decision = new DecisionMatrix();
 
-        Console.Write(brain2.Name);
+        Console.WriteLine(decision.Decision);
+
+        Console.Clear();
+
+        Console.ForegroundColor = ConsoleColor.Green;
+
+        Console.WriteLine("WELCOME TO CHOOSE YOUR OWN ADVENTURE");
+            Console.WriteLine("DO YOU WISH TO PROCEED?");
+
+        string userInput = Console.ReadLine();
+
+        if (userInput == "Yes") { Console.WriteLine("WELCOME TO CHOOSE YOUR OWN ADVENTURE"); }
+
+        Console.WriteLine("JOURNEY UNDER\r\nTHE SEA\r\nCHOOSE YOUR OWN ADVENTURE • 2\r\nWARNING! ! ! !\r\nDo not read this book straight through from beginning to end! These pages contain many different\r\nadventures you can go on as you journey under\r\nthe sea. From time to time as you read along, you\r\nwill be asked to make a choice. Your choice may\r\nlead to success or disaster!\r\nThe adventures you take are a result of your\r\nchoice. You are responsible because you choose!\r\nAfter you make your choice follow the instructions\r\nto see what happens to you next.\r\nRemember—you cannot go back! Think carefully\r\nbefore you make a move! One mistake can be\r\nyour last ... or it may lead you to fame and\r\nfortune!")
+
+        Console.WriteLine("\npress any key to exit the process...");
+
+        // basic use of "Console.ReadKey()" method
+        Console.ReadKey();
     }
 }
 
