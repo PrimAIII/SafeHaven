@@ -69,8 +69,14 @@ class MainMethod
 
         if (userInput == "Yes") { Console.WriteLine("WELCOME TO CHOOSE YOUR OWN ADVENTURE"); }
 
-        Console.WriteLine("JOURNEY UNDER\r\nTHE SEA\r\nCHOOSE YOUR OWN ADVENTURE • 2\r\nWARNING! ! ! !\r\nDo not read this book straight through from beginning to end! These pages contain many different\r\nadventures you can go on as you journey under\r\nthe sea. From time to time as you read along, you\r\nwill be asked to make a choice. Your choice may\r\nlead to success or disaster!\r\nThe adventures you take are a result of your\r\nchoice. You are responsible because you choose!\r\nAfter you make your choice follow the instructions\r\nto see what happens to you next.\r\nRemember—you cannot go back! Think carefully\r\nbefore you make a move! One mistake can be\r\nyour last ... or it may lead you to fame and\r\nfortune!")
+        Console.WriteLine("JOURNEY UNDER\r\nTHE SEA\r\nCHOOSE YOUR OWN ADVENTURE • 2\r\nWARNING! ! ! !\r\nDo not read this book straight through from beginning to end! These pages contain many different\r\nadventures you can go on as you journey under\r\nthe sea. From time to time as you read along, you\r\nwill be asked to make a choice. Your choice may\r\nlead to success or disaster!\r\nThe adventures you take are a result of your\r\nchoice. You are responsible because you choose!\r\nAfter you make your choice follow the instructions\r\nto see what happens to you next.\r\nRemember—you cannot go back! Think carefully\r\nbefore you make a move! One mistake can be\r\nyour last ... or it may lead you to fame and\r\nfortune!");
 
+        Console.WriteLine();
+
+        if (Console.ReadKey().Key == ConsoleKey.Enter) { Console.Clear(); }
+
+        Console.WriteLine("You are an underwater explorer. You are leaving to explore the deepest oceans. You must find\r\nthe lost city of Atlantis. This is your most challenging assignment.\r\nIt is morning and the sun pushes up on the\r\nhorizon. The sea is calm. You climb into the narrow pilot's compartment of the underwater vessel\r\nSeeker with your special gear. The crew of the\r\nresearch vessel Maray screws down the hatch\r\nclamps. Now begins the plunge into the depths of\r\nthe ocean. The Seeker crew begins lowering by a\r\nstrong, but thin cable. Within minutes, you are so\r\ndeep in the ocean that little light filters down to\r\nyou. The silence is eerie as the Seeker slips deeper\r\nand deeper. You peer out the thick glass porthole\r\nand see fish drifting past, sometimes stopping to\r\nlook at you—an intruder from another world.");
+        
         Console.WriteLine("\npress any key to exit the process...");
 
         // basic use of "Console.ReadKey()" method
