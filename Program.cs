@@ -2,18 +2,33 @@
 // A skeleton of a C# program
 using System;
 
-abstract class Brain
+
+
+public class Brain
 {
-    public void StartNeurons() { char[] neurons = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray(); }
-
-    protected char[] AddNeurons(char[] neurons)
+    // Constructor that takes no arguments:
+    public Brain()
     {
-        return neurons;
+        Name = "Jim";
     }
-    public virtual string Drive(char[] chars, int index) { return "neurons"; }
 
-    public abstract int neuronIndicator();
+    // Constructor that takes one argument:
+    public Brain(string name)
+    {
+        Name = name;
+    }
+
+    // Auto-implemented readonly property:
+    public string Name { get; }
+
+    // Method that overrides the base class (System.Object) implementation.
+    public override string ToString()
+    {
+        return Name;
+    }
 }
+
+
 
 class MainMethod
 {
@@ -23,7 +38,15 @@ class MainMethod
     {
         char[] alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
         Console.WriteLine("Main Method");
-        
+        Console.WriteLine(alpha);
+
+        var brain1 = new Brain();
+
+        Console.WriteLine(brain1.Name);
+
+        var brain2 = new Brain("Flim Wazza");
+
+        Console.Write(brain2.Name);
     }
 }
 
